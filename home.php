@@ -1,6 +1,7 @@
 <?php
 
 // This is the page for /Blog
+get_header();
 
 if(have_posts() ) :
     while ( have_posts()) : the_post();
@@ -13,3 +14,5 @@ if(have_posts() ) :
 else:
     _e( 'Sorry, no posts matched your criteria.', 'textdomain');
 endif;
+
+get_footer();
