@@ -12,3 +12,10 @@ function load_css()
 }
 
 add_action('wp_enqueue_scripts', 'load_css');
+
+register_nav_menus(
+    array(
+        'main-menu' => 'Main menu location',
+        'footer-menu' => 'Footer menu location'
+    )
+);
