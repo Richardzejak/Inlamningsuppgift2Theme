@@ -13,11 +13,21 @@ $link = get_field('link');
 get_header();
 ?>
 
-<h1><?php echo $title; ?></h1>
-<p><?php echo $desc; ?></p>
-<img src="<?php echo $theImage; ?>">
-<a href="<?php echo $link;?>" class="button" target="_blank"> Go to Link</button>
+<div class="container">
 
+    <h1 class="title"><?php echo $title; ?></h1>
+
+    <div class="column">
+
+        <p class="desc"><?php echo $desc; ?></p>
+        
+        <img class="image" src="<?php echo $theImage; ?>">
+
+    </div>
+
+    <a class="link" href="<?php echo $link;?>" class="button" target="_blank"> Go to Link</button>
+
+</div>
 
 
 
